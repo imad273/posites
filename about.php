@@ -1,19 +1,5 @@
 <?php 
-   /* No php code here ! 
-
-    yqqdddddd
-    sSSdd
-
-    Ssddscsc
-    dscsdcsddcdscds
-    
-    dcsdcdddd
-    sdcdscsdcsdcsdcdsssssssssssssss
-    
-    sssssssssssssssscdddcdcdcdcdcdcdcdcdcdc
-    dcdcdcdscdcdc
-    
-    */
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
