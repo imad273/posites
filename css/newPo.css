@@ -78,7 +78,7 @@ form button{
 }
 form button:hover{
     color: #333;
-    background-color: transparent;
+    background-color: none;
 }
 @media screen and (max-width: 425px) {
     header{

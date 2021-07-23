@@ -64,7 +64,7 @@ header nav a:hover{
 }
 .posts .post button:hover{
     color: #333;
-    background-color: transparent;    
+    background-color: none;    
 }
 @media screen and (max-width: 425px) {
     header{
@@ -74,7 +74,7 @@ header nav a:hover{
         position: fixed;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
         justify-content: center;
         width: 0%;
         height: 100%;
@@ -83,6 +83,7 @@ header nav a:hover{
         background-color: #333;
         transition: .3s;
         overflow: hidden;
+        z-index: 1111111;
     }
     #humb{
         display: block;

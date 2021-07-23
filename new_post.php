@@ -32,17 +32,25 @@
     <?php
         require "confi.php";
         if(isset($_POST['send'])){
+            
             $title = $_POST['title'];
             $content = $_POST['content'];
-
-            $sql = "INSERT INTO posts (title, content) VALUE ('$title', '$content')";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute();
-            if($sql){ ?>
-                <div class="succs">
-                    <?php echo "Post Published";?>
+            if(!isset($_POST['title'], $_POST['content'])){ ?>
+                <div class="succs" style="background-color: rgb(255, 23, 23);">
+                    <?php echo "Please type semthings" ?>
                 </div>
+            <?php } 
+            
+            else{
+                $sql = "INSERT INTO posts (title, content) VALUE ('$title', '$content')";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute();
+                if($sql){ ?>
+                    <div class="succs">
+                        <?php echo "Post Published";?>
+                    </div>
         <?php 
+                }
             }
         }
     ?>

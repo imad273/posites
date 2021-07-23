@@ -1,9 +1,21 @@
 <?php 
    require "confi.php";
    /* 
-
+    space
+    space
+    space
+    space
+    space
+        
         No php code here !
-   
+    
+    space
+    space
+    space
+    space
+    space
+    space
+
     */
 ?>
 
@@ -24,9 +36,7 @@
     <title>About</title>
 </head>
 <body>
-
     <header>
-        
         <div class="logo">
             <a href="index.php">POSITES</a>
         </div>
