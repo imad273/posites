@@ -35,8 +35,13 @@
             
             $title = $_POST['title'];
             $content = $_POST['content'];
+<<<<<<< HEAD
             if(empty($_POST['title']) &&  empty($_POST['content'])){ ?>
                 <div class="succs" style="background-color: rgb(255, 23, 23); color: #fff;">
+=======
+            if(!isset($_POST['title'], $_POST['content'])){ ?>
+                <div class="succs" style="background-color: rgb(255, 23, 23);">
+>>>>>>> 336fa1855b8a7d3db7ad9fea091d2f4246da31e9
                     <?php echo "Please type semthings" ?>
                 </div>
             <?php } 
