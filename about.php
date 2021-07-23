@@ -1,25 +1,11 @@
 <?php 
    require "confi.php";
    /* 
-<<<<<<< HEAD
-   
-=======
->>>>>>> 336fa1855b8a7d3db7ad9fea091d2f4246da31e9
-    space
-    space
-    space
-    space
     space
         
         No php code here !
     
     space
-    space
-    space
-    space
-    space
-    space
-
     */
 ?>
 
