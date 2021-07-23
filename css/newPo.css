@@ -3,7 +3,6 @@
     margin: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
-
 header{
     background-color: #333;
     display: flex;
@@ -11,7 +10,6 @@ header{
     justify-content: space-between;
     padding: 20px 40px;
 }
-
 header .logo a{
     text-decoration: none;
     color: #fff;
@@ -35,7 +33,6 @@ header nav a:hover{
 #close{
     display: none;
 }
-
 .succs{
     width: 100%;
     max-width: 400px;
@@ -44,7 +41,6 @@ header nav a:hover{
     background-color: rgb(23, 255, 100);
     text-align: center;
 }
-
 form{
     position: relative;
     top: 20px;
@@ -84,7 +80,6 @@ form button:hover{
     color: #333;
     background-color: transparent;
 }
-
 @media screen and (max-width: 425px) {
     header{
         padding: 20px 20px;

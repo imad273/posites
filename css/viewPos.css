@@ -3,7 +3,6 @@
     margin: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
-
 header{
     background-color: #333;
     display: flex;
@@ -11,7 +10,6 @@ header{
     justify-content: space-between;
     padding: 20px 40px;
 }
-
 header .logo a{
     text-decoration: none;
     color: #fff;
@@ -27,7 +25,6 @@ header nav a{
 header nav a:hover{
     color: #fff;
 }
-
 #humb{
     display: none;
     color: #fff;
@@ -36,8 +33,6 @@ header nav a:hover{
 #close{
     display: none;
 }
-
-
 .posts{
     margin: 10px;
     display: flex;
@@ -45,7 +40,6 @@ header nav a:hover{
     justify-content: center;
     align-items: center;
 }
-
 .posts .post{
     margin: 5px;
     border: 10px solid #333;
@@ -58,7 +52,6 @@ header nav a:hover{
 .posts .post p{
     margin: 5px;
 }
-
 @media screen and (max-width: 425px) {
     header{
         padding: 20px 20px;
