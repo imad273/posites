@@ -33,52 +33,38 @@ header nav a:hover{
 #close{
     display: none;
 }
-.succs{
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto ;
-    padding: 10px;
-    background-color: rgb(23, 255, 100);
-    text-align: center;
-}
-form{
-    position: relative;
-    top: 20px;
+.posts{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-form input{
+.posts .post{
+    margin: 10px;
+    border: 8px solid #333;
+    padding: 10px;
     width: 100%;
     max-width: 700px;
-    height: 25px;
-    margin: 5px;
-    padding: 3px;
-    outline: none;
 }
-form textarea{
-    resize: none;
-    width: 100%;
-    max-width: 700px;
+.posts .post h1{
     margin: 5px;
-    padding: 3px;
-    outline: none;
 }
-form button{
+.posts .post p{
     margin: 5px;
+}
+.posts .post button{
     color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
     background-color: #333;
-    padding: 7px 30px;
-    border: 1px solid #333;
-    transition: .3s;
+    border: 2px solid #333;
     cursor: pointer;
-    outline: none;
-    font-weight: bold;
+    transition: .3s;
 }
-form button:hover{
+.posts .post button:hover{
     color: #333;
-    background-color: transparent;
+    background-color: none;    
 }
 @media screen and (max-width: 425px) {
     header{
@@ -97,6 +83,7 @@ form button:hover{
         background-color: #333;
         transition: .3s;
         overflow: hidden;
+        z-index: 1111111;
     }
     #humb{
         display: block;
@@ -108,5 +95,10 @@ form button:hover{
         right: 13%;
         font-size: 21px;
         color: #fff;
+    }
+}
+@media screen and (max-width: 750px){
+    .posts .post{
+        width: auto;
     }
 }

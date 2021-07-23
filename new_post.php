@@ -11,7 +11,7 @@
 
     <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="css/newPo.css">
+    <link rel="stylesheet" href="css/new.css">
 
     <title>Add Post</title>
 </head>
@@ -27,22 +27,30 @@
             <a href="new_post.php">Add Post</a>
             <a href="about.php">About</a>
         </nav>
-    </header>
+    </header> 
 
     <?php
         require "confi.php";
         if(isset($_POST['send'])){
+            
             $title = $_POST['title'];
             $content = $_POST['content'];
-
-            $sql = "INSERT INTO posts (title, content) VALUE ('$title', '$content')";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute();
-            if($sql){ ?>
-                <div class="succs">
-                    <?php echo "Post Published";?>
+            if(empty($_POST['title']) &&  empty($_POST['content'])){ ?>
+                <div class="succs" style="background-color: rgb(255, 23, 23); color: #fff;">
+                    <?php echo "Please type semthings" ?>
                 </div>
+            <?php } 
+            
+            else{
+                $sql = "INSERT INTO posts (title, content) VALUE ('$title', '$content')";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute();
+                if($sql){ ?>
+                    <div class="succs">
+                        <?php echo "Post Published";?>
+                    </div>
         <?php 
+                }
             }
         }
     ?>

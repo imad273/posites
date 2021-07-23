@@ -3,6 +3,7 @@
     margin: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 header{
     background-color: #333;
     display: flex;
@@ -36,6 +37,7 @@ header nav a:hover{
 .content{
     max-width: 550px;
     margin: 15px auto;
+    padding: 5px;
     text-align: center;
 }
 @media screen and (max-width: 425px) {
