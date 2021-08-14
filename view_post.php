@@ -41,7 +41,7 @@
     <div class="posts">
         <div class="post">
             <h2> <?php echo $ftc['title']; ?></h2>
-            <p><?php echo $ftc['content']; ?></p>
+            <p> <?php echo $ftc['content']; ?></p>
         </div>
     </div>
 

@@ -76,10 +76,7 @@ form button{
     outline: none;
     font-weight: bold;
 }
-form button:hover{
-    color: #333;
-    background-color: none;
-}
+
 @media screen and (max-width: 425px) {
     header{
         padding: 20px 20px;
